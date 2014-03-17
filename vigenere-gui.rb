@@ -131,7 +131,7 @@ class VigenereGtk
       end
       if anahtar = brute_force(@input.buffer.text, @key.text.to_i)
         md = Gtk::MessageDialog.new(@window,
-                                    Gtk::Dialog::MODAL, Gtk::MessageDialog::WARNING,
+                                    Gtk::Dialog::MODAL, Gtk::MessageDialog::INFO,
                                     Gtk::MessageDialog::BUTTONS_CLOSE, "Bulunan Anahtar: #{anahtar.dup}")
         md.run
         md.destroy
